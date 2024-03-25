@@ -1,0 +1,29 @@
+//responsive
+
+$breakpointst:
+(tablette: 1050px);
+
+$breakpoints:
+(mobile: 770px);
+
+$breakpointsmax:
+(max: 1900px);
+
+
+@mixin tablette-only {
+    @media screen and (max-width: map-get($breakpointst, tablette)){
+        @content;
+    }
+  }
+
+  @mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+  }
+
+  @mixin max-only {
+    @media screen and (min-width: map-get($breakpointsmax, max)){
+        @content;
+    }
+  }

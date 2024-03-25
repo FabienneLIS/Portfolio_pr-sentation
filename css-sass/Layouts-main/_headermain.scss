@@ -1,0 +1,117 @@
+//header
+header 
+  {
+    background-size: cover;
+    height: 83vh;
+    margin: 0%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 6em;
+    background-color: $color-back;
+    padding: 2%;
+    margin: 1% 0% 1% 0%;
+    @include tablette-only {
+        font-size: 4em;
+    }
+    @include mobile-only {
+        font-size: 2em;
+    }
+  }
+
+  header p {
+    font-size: 2em;
+    background-color: $color-back;
+    margin: 1% 0% 1% 0%;
+    padding: 2%;
+    @include tablette-only {
+        font-size: 1.4em;
+    }
+  }
+//présentation
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 5% auto 5% auto;
+    scroll-margin-top: 10vh;
+    width: 80%;
+    height: 90%;
+}
+.about h2 {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background-color: $color-back;
+    padding: 2%;
+}
+.about p {
+    text-align: center;
+    background-color: $color-back;
+    padding: 2%;
+}
+.about-a {
+text-align: center;
+background-color: $color-back;
+}
+      
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 80%;
+    max-width: 900px;
+    height: 400px;
+    margin: auto;
+    &-aside {
+        border: 0.2em solid black;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include tablette-only{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about-button {
+    display: block;
+    width: 10em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: $color-font;
+    box-shadow: 0px 0px 40px darken($color-secondary, 20);
+    border-radius: 10px;
+    background-color: $color-secondary;
+    padding: 30px;
+    margin: 10% auto 0 auto;
+    transform: scale(1);
+    &:hover, :focus {
+        cursor: pointer;
+        outline: 2px solid $color-secondary;
+        outline-offset: 0.2em;
+        background-color: darken($color-secondary, 4);
+        box-shadow: 0px 0px 40px lighten($color-secondary, 20);
+        transform: scale(1.01);
+    }
+}
+
+.about-button a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}

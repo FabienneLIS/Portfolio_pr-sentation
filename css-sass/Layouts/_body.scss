@@ -1,0 +1,63 @@
+//body
+
+html, body {
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+    background-image: url(../media/codeB3.png);
+    background-attachment: fixed;
+    font-family: $font-text;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    margin: 0%;
+    padding: 0%;
+    @include max-only {
+        width: 1900px;
+        margin: auto;
+    }
+    @include open-screen-anim;
+}
+
+a {
+    color: $color-font;
+    font-family: $font-text;
+    font-size: 1.30em;
+}
+h1 
+{
+  color: $color-font;
+  font-family: $font-title;
+}
+p 
+{
+  font-size: 1.30em;
+  color: $color-font;
+  font-family: $font-text;
+  text-align: center;
+  @include mobile-only {
+    font-size: 14px;
+  }
+}
+h2
+{
+    font-size: 2.2em;
+    letter-spacing: 0.25em;
+    margin-bottom: 4%;
+    @include mobile-only {
+        font-size: 26px;
+        margin: 0px;
+    }
+}
+
+h3 {
+  font-size: 1.6em;
+}

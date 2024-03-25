@@ -1,0 +1,25 @@
+//Utils
+@import "./Utils/responsives";
+@import "./Utils/keyframes";
+@import "./Utils/colors";
+@import "./Utils/font-family";
+
+//Layouts
+@import "./Layouts/body";
+@import "./Layouts/footer";
+@import "./Layouts/nav";
+
+//Layouts-main
+@import "./Layouts-main/headermain";
+@import "./Layouts-main/skillsmain";
+@import "./Layouts-main/portfoliomain";
+@import "./Layouts-main/contact";
+//css main page
+
+
+//main
+
+main {
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+  }
